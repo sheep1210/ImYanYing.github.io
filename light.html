@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="light.css" rel="stylesheet" type="text/css">
+    </head> <link href="https://fonts.googleapis.com/css?family=Lilita+One:regular" rel="stylesheet" />
+<body>
+    <section>
+        <a href="index备用.html">
+       <button onclick="hideButton(this)">GET READY? >></button>
+    </a>
+    </section>
+    <div class="light"></div>
+    <script type="text/javascript">
+        var pos = document.documentElement;
+        pos.addEventListener('mousemove',e =>{
+            pos.style.setProperty('--x', e.clientX + 'px')
+            pos.style.setProperty('--y', e.clientY + 'px')
+        })
+    </script>
+    <script type="text/javascript">
+        function hideButton(x)
+        {
+            x.style.display='none';
+        }
+    </script>
+</body>
+</html>
